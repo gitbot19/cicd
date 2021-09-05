@@ -27,5 +27,6 @@ steps:
     targetType: 'inline'
     script: |
       # Write your commands here
-      
+      wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
       hadolint --config '$(System.DefaultWorkingDirectory)/.hadolint.yaml' Dockerfile
+  displayName: 'Run a hadolint multi-line script'
