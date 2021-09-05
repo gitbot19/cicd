@@ -1,0 +1,3 @@
+docker run --rm -i -v hadolint.yaml:/.config/hadolint.yaml hadolint/hadolint < Dockerfile
+# OR
+docker run --rm -i -v hadolint.yaml:/.config/hadolint.yaml ghcr.io/hadolint/hadolint < Dockerfile

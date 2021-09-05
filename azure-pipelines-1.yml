@@ -27,5 +27,5 @@ steps:
     targetType: 'inline'
     script: |
       # Write your commands here
-      docker run --rm -i -v $(System.DefaultWorkingDirectory)/.hadolint.yaml:/.config/hadolint.yaml hadolint/hadolint < Dockerfile || true
+      docker run --rm -i -v $(System.DefaultWorkingDirectory)/.hadolint.yaml:/.config/hadolint.yaml hadolint/hadolint < Dockerfile.Alpha || true
   displayName: 'Run a hadolint multi-line script'
