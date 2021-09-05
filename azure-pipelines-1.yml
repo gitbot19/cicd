@@ -21,3 +21,11 @@ steps:
 - task: Bash@3
   inputs:
     filePath: '$(System.DefaultWorkingDirectory)/hello.sh'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      hadolint --config '$(System.DefaultWorkingDirectory)/.hadolint.yaml' Dockerfile
