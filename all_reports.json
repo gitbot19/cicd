@@ -1,0 +1,6 @@
+-:1 DL3006 [1m[93mwarning[0m: Always tag the version of an image explicitly
+-:3 SC2154 [1m[93mwarning[0m: node_verion is referenced but not assigned (did you mean 'node_version'?).
+-:3 DL3009 [92minfo[0m: Delete the apt-get lists after installing something
+-:3 DL3015 [92minfo[0m: Avoid additional packages by specifying `--no-install-recommends`
+-:6 DL3045 [1m[93mwarning[0m: `COPY` to a relative destination without `WORKDIR` set.
+-:8 DL3003 [1m[93mwarning[0m: Use WORKDIR to switch to a directory

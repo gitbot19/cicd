@@ -1,19 +1,10 @@
+# hadolint ignore=DL3011
+
 ignored:
-  - DL3000
-  - SC1010
+  - DL3000 # this is test
+  - SC1010 # this is test
+  - DL3011 # this is test
 
 trustedRegistries:
   - docker.io
   - my-company.com:5000
-
-override:
-  error:
-    - DL3001
-    - DL3002
-  warning:
-    - DL3042
-    - DL3033
-  info:
-    - DL3032
-  style:
-    - DL3015

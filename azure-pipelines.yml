@@ -31,3 +31,7 @@ steps:
       docker run --rm -i -v $(System.DefaultWorkingDirectory)/.hadolint.yaml:/.config/hadolint.yaml hadolint/hadolint < Dockerfile.Beta || true
       docker run --rm -i -v $(System.DefaultWorkingDirectory)/.hadolint.yaml:/.config/hadolint.yaml hadolint/hadolint < Dockerfile.Gama || true
   displayName: 'Run a hadolint multi-line script'
+
+- task: Bash@3
+  inputs:
+    filePath: '$(System.DefaultWorkingDirectory)/hadolint2.sh'
